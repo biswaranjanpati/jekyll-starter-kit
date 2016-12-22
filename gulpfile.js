@@ -29,7 +29,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
   browserSync.reload();
 });
 
-// compile sass & scss
+// compile sass
 gulp.task('styles', function() {
 	return gulp
 		.src('_assets/css/main.sass')
@@ -48,7 +48,7 @@ gulp.task('styles', function() {
 // compile javascript
 gulp.task('scripts', function() {
 	return gulp
-		.src(['_assets/js/vendor/*', '_assets/js/functions.js'])
+		.src(['_assets/js/vendor/*', '_assets/js/*.js'])
 		.pipe(plumber({
 			errorHandler: onError
 		}))
@@ -65,16 +65,12 @@ gulp.task('scripts', function() {
 // optimize images
 gulp.task('images', function() {
 	return gulp
-		.src('_assets/img/*.{jpg,png}')
+		.src('_assets/img/*.{jpg,png,svg}')
 		.pipe(cache(imageMin({ optimizationLevel: 5, progressive: true, interlaced: true })))
 		.pipe(gulp.dest('_site/assets/img'));
 });
 
-/*
- you can't build a website without icons
- drop your icon fonts into a "fonts" folder in the tools dir
- gulp will take care of the rest
-*/
+// icons
 gulp.task('icons', function() {
 	return gulp
 		.src('_assets/img/icons/*')
@@ -91,8 +87,8 @@ gulp.task('serve', ['styles', 'scripts', 'images', 'icons'], function() {
 	});
 	gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 	gulp.watch('_assets/css/**/*.{sass,scss}',['styles']);
-	gulp.watch('_assets/js/*.js', ['scripts']);
-	gulp.watch('_assets/img/*.{jpg,png}', ['images']);
+	gulp.watch('_assets/js/**/*.js', ['scripts']);
+	gulp.watch('_assets/img/*.{jpg,png,svg}', ['images']);
 	gulp.watch('_assets/img/icons/*', ['icons']);
 });
 
