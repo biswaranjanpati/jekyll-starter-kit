@@ -7,6 +7,14 @@
     "type": "git",
     "url": "git+https://github.com/BuckyMaler/jekyll-starter-kit.git"
   },
+  "keywords": [
+    "build",
+    "jekyll",
+    "gulp",
+    "html",
+    "sass",
+    "javascript"
+  ],
   "author": "Bucky Maler",
   "license": "MIT",
   "devDependencies": {
