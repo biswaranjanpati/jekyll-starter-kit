@@ -26,6 +26,10 @@ Ground zero for your next Jekyll website.
   - `hub create`
   - add, commit, and push
 
+## Sass organization
+
+  The Sass is organized following [SMACSS](https://smacss.com) (Scalable & Modular Architecture for CSS) conventions.
+
 ## Credits
 
   - [DevTips Starter Kit](https://github.com/DevTips/DevTips-Starter-Kit) visual design heavily influenced the Jekyll Starter Kit visual design
