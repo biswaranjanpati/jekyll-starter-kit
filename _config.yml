@@ -1,0 +1,15 @@
+# Site settings
+title: Jekyll Starter Kit
+description: 'Ground zero for your next Jekyll website.'
+keywords: 'jekyll, starter kit, html, sass, javascript'
+author: 'Bucky Maler'
+permalink: pretty
+
+# exclude the following files from jekyll processing
+exclude: ['package.json', 'gulpfile.js', 'node_modules', 'README.md']
+
+# prevent jekyll rebuilds from interfering with gulp
+keep_files: ['assets']
+
+# Build settings
+markdown: kramdown
