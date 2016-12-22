@@ -348,6 +348,17 @@ body {
   background-color: #444;
 }
 
+.header__logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
 .header__title {
   margin: 20px 0;
   color: #fff;
