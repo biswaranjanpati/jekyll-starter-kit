@@ -32,6 +32,7 @@ Ground zero for your next Jekyll website.
 
 ## Credits
 
+  - [Jekyll's logo](https://creativecommons.org/licenses/by/4.0/) which has been modified to an all white fill
   - [DevTips Starter Kit](https://github.com/DevTips/DevTips-Starter-Kit) visual design heavily influenced the Jekyll Starter Kit visual design
 
 ## Misc:
