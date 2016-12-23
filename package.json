@@ -15,7 +15,11 @@
     "sass",
     "javascript"
   ],
-  "author": "Bucky Maler",
+  "author": {
+    "name": "Bucky Maler",
+    "url": "buckymaler.com",
+    "mail": "maler.bucky@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.11.1",
